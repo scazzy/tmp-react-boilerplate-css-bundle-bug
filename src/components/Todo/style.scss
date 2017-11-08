@@ -1,0 +1,7 @@
+.todo-item {
+  background: yellow;
+  &.completed {
+    opacity: 0.5;
+    background: red;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "presets": ["react",
+    ["env", {
+        "targets": {
+          "browsers": ["last 2 versions", "safari >= 7", "IE 10"]
+        }
+      }]
+  ],
+  "plugins": [
+    "transform-class-properties",
+    ["css-modules-transform", {
+      "preprocessCss": "./loaders/sass-loader.js",
+      "generateScopedName": "[hash:base64:5]",
+      "extensions": [".scss"]
+    }]
+  ],
+  "env": {
+    "production": {
+      "presets": ["minify"]
+    }
+  }
+}

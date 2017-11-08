@@ -1,9 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
+import Root from './components/Root';
 
 window.onload = () => {
   render (
-    <div>Hello World</div>,
+    <Root/>,
     document.getElementById('root')
   )
 }
